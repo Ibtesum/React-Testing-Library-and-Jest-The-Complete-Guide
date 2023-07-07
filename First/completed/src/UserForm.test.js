@@ -34,7 +34,6 @@ test("it calls onUserAdd when the form is submitted", async () => {
     const nameInput = screen.getByRole('textbox', {name: /name/i})
     const emailInput = screen.getByRole('textbox', {name: /email/i})
 
-   
     // Simulate typing in a name
     user.click(nameInput);
     user.keyboard("jane");
